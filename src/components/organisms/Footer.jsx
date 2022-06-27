@@ -1,8 +1,11 @@
-import Container from '@/atoms/Container'
+import dynamic from 'next/dynamic'
 import React from 'react'
 import Link from 'next/link'
 import logo from '@/logo/amikom.png'
-import LazyImage from '@/atoms/Image/Lazy'
+import Container from '@/atoms/Container'
+import Fallback from '@/atoms/SuspenseFallback'
+
+const LazyImage = dynamic(() => import('@/atoms/Image/Lazy'), { ssr: false })
 
 const Footer = () => {
     return (
@@ -16,7 +19,9 @@ const Footer = () => {
             <div className="col-span-1">
                 <Link href="#">
                     <a>
-                        <LazyImage src={logo.src} alt="logo" containerClassName="w-[150px] sm:w-[200px] lg:mx-auto lg:my-0 my-10" />
+                        <React.Suspense fallback={<Fallback />}>
+                            <LazyImage src={logo.src} alt="logo" containerClassName="w-[150px] sm:w-[200px] mx-auto" loaderType="white" />
+                        </React.Suspense>
                     </a>
                 </Link>
             </div>

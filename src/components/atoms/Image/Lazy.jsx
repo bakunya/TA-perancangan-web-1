@@ -3,7 +3,7 @@ import useObserver from '@/hooks/useIntersectionObserver'
 import clsx from 'clsx'
 import { AiOutlineLoading } from 'react-icons/ai'
 
-const Lazy = ({ containerClassName, imgClassName, src, alt = 'Gambar', withLoader = true }) => {
+const Lazy = ({ containerClassName, imgClassName, src, alt = 'Gambar', withLoader = true, loaderType = "primary" }) => {
     const imgRef = React.useRef()
     const imgLoadRef = React.useRef()
     const options = React.useRef({
@@ -37,7 +37,7 @@ const Lazy = ({ containerClassName, imgClassName, src, alt = 'Gambar', withLoade
             <img src={null} alt={alt} className={clsx(imgClassName, 'w-auto opacity-0 transition duration-500')} ref={imgRef} />
             {
                 withLoader && 
-                    <div className={clsx("absolute inset-0 flex items-center justify-center text-white")} ref={imgLoadRef}>
+                    <div className={clsx(loaderType === 'primary' ? 'text-primary' : loaderType === 'secondary' ? 'text-secondary' : 'text-white', "absolute inset-0 flex items-center justify-center")} ref={imgLoadRef}>
                         <AiOutlineLoading className='animate-[spin_300ms_linear_infinite]' size={23} />
                     </div>
             }

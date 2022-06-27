@@ -1,10 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 import logo from '@/logo/amikom.png'
 import Container from '@/atoms/Container'
-import LazyImage from '@/atoms/Image/Lazy'
 import Menu from '@/organisms/NavBarMenu/Menu'
+import Fallback from '@/atoms/SuspenseFallback'
 import Search from '@/organisms/NavBarMenu/Search'
+
+const LazyImage = dynamic(() => import('@/atoms/Image/Lazy'), { ssr: false })
 
 const NavBar = () => {
     return (
@@ -12,7 +15,9 @@ const NavBar = () => {
             <div className="flex justify-between items-center h-[78px]">
                 <Link href="#">
                     <a>
-                        <LazyImage src={logo.src} alt="logo" containerClassName="w-[150px] sm:w-[200px]" />
+                        <React.Suspense fallback={<Fallback />}>
+                            <LazyImage src={logo.src} alt="logo" containerClassName="w-[150px] sm:w-[200px]" loaderType="white" />
+                        </React.Suspense>
                     </a>
                 </Link>
                 <div className="flex justify-end text-white bg-primary">

@@ -1,16 +1,13 @@
 import React from 'react'
-import { AiOutlineLoading } from 'react-icons/ai'
+import dynamic from 'next/dynamic'
+import Fallback from '@/atoms/SuspenseFallback'
 
 import useResponsive from '@/hooks/useResponsive'
-const MainMenuContentTablet = React.lazy(() => import('./MainMenuContent.Tablet'))
-const MainMenuContentMobile = React.lazy(() => import('./MainMenuContent.Mobile'))
-const MainMenuContentDesktop = React.lazy(() => import('./MainMenuContent.Desktop'))
+const MainMenuContentTablet = dynamic(() => import('./MainMenuContent.Tablet'), { suspense: true })
+const MainMenuContentMobile = dynamic(() => import('./MainMenuContent.Mobile'), { suspense: true })
+const MainMenuContentDesktop = dynamic(() => import('./MainMenuContent.Desktop'), { suspense: true })
 
-const Fallback = React.memo(() => (
-    <div className="min-h-[500px] flex items-center justify-center">
-        <AiOutlineLoading className='animate-[spin_300ms_linear_infinite]' size={23} />
-    </div>
-))
+
 
 const MainMenuContent = () => {
     const isXl = useResponsive('xl')

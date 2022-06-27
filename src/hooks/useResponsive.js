@@ -12,15 +12,21 @@ const useResponsive = (viewport = 'sm') => {
     const [isMatch, setIsMatch] = React.useState(false)
 
     React.useEffect(() => {
-        if(typeof window !== 'undefined') setIsMatch(window.matchMedia(breakpoints[viewport]).matches)
-
-        const listener = () => {
+        if(typeof window !== 'undefined') {
             setIsMatch(window.matchMedia(breakpoints[viewport]).matches)
+
+            const listener = () => {
+                setIsMatch(window.matchMedia(breakpoints[viewport]).matches)
+            }
+
+            window.addEventListener('resize', listener)
         }
 
-        window.addEventListener('resize', listener)
-
-        return () => window.removeEventListener('resize', listener)
+        return () => {
+            if(typeof window !== 'undefined') {
+                window.removeEventListener('resize', listener)
+            }
+        }
 
     }, [setIsMatch, viewport])
 
