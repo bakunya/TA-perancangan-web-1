@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/utils/*": ["src/utils/*"],
+            "@/hooks/*": ["src/hooks/*"],
+            "@/store/*": ["src/store/*"],
+            "@/logo/*": ["src/assets/images/logo/*"],
+            "@/illust/*": ["src/assets/images/illust/*"],
+            "@/atoms/*": ["src/components/atoms/*"],
+            "@/organisms/*": ["src/components/organisms/*"],
+            "@/molecules/*": ["src/components/molecules/*"],
+        }
+    }
+}
