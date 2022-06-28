@@ -24,27 +24,25 @@ const Footer = () => {
                                 </React.Suspense>
                             </a>
                         </Link>
-                        <p className='mt-7 text-sm max-w-[300px] font-light leading-loose'>
-                        Diselenggarakan oleh: <br />
-                        <strong className='font-bold'>Yayasan Amikom Yogyakarta</strong><br />
-                        Jl. Padjajaran, Ring Road Utara, Kel. Condongcatur, Kec. Depok, Kab. Sleman, Prop. Daerah Istimewa Yogyakarta
-                        </p>
-                        <table className='mt-5'>
-                            {
-                                CONTACT_LINKS.map((itm, i) => (
-                                    <tr eky={i} className='mt-2 block'>
-                                        <td className='text-sm'>{itm.title}</td>
-                                        <td className='text-sm'>:</td>
-                                        <td className='text-sm'>
-                                            {
-                                                itm?.url 
-                                                    ? <a href={itm.url}>{itm.contact}</a>
-                                                    : itm.contact
-                                            }    
-                                        </td>
-                                    </tr>
-                                ))
-                            }
+                        <p className='mt-7 text-sm max-w-[300px] font-light leading-loose'>Diselenggarakan oleh: <br /><strong className='font-bold'>Yayasan Amikom Yogyakarta</strong><br />Jl. Padjajaran, Ring Road Utara, Kel. Condongcatur, Kec. Depok, Kab. Sleman, Prop. Daerah Istimewa Yogyakarta</p>
+                        <table className="mt-5">
+                            <tbody>
+                                {
+                                    CONTACT_LINKS.map((itm, i) => (
+                                        <tr key={i} className='mt-2 block'>
+                                            <td className='text-sm min-w-[45px]'>{itm.title}</td>
+                                            <td className='text-sm min-w-[10px]'>:</td>
+                                            <td className='text-sm'>
+                                                {
+                                                    itm?.url 
+                                                        ? <a href={itm.url}>{itm.contact}</a>
+                                                        : itm.contact
+                                                }    
+                                            </td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
                         </table>
                     </div>
                 </div>

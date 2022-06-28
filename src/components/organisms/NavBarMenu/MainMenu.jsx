@@ -28,7 +28,7 @@ const MainMenu = ({ isShow, onHide }) => {
                 
                 <div className="bg-primary flex justify-between items-center h-[78px] pl-5">
                     <Link href="#">
-                        <a>
+                        <a className='scale-[0.8]'>
                             <React.Suspense fallback={<Fallback />}>
                                 <LazyImage src={logo.src} alt="logo" containerClassName="w-[150px] sm:w-[200px]" loaderType="white" />
                             </React.Suspense>

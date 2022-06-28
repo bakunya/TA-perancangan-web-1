@@ -1,26 +1,25 @@
-import { useCallback, useEffect } from "react"
+import { useRef, useEffect } from "react"
 
 const useIntersectionObserver = (ref, options, callbackObserve) => {
-    const callback = useCallback((entries, observer) => {
-        if(callbackObserve instanceof Function) callbackObserve(observer, entries, ref)
-    }, [callbackObserve, ref])
+    const observer = useRef(null)
     
     useEffect(() => {
-        if(typeof window !=='undefined') {
-            let observer =  new IntersectionObserver(callback, options)
+        if(typeof window !=='undefined' && !observer.current) {
+            observer.current =  new IntersectionObserver((entries, observer) => {
+                if(callbackObserve instanceof Function) callbackObserve(observer, entries, ref)
+            }, options)    
+        }
 
-            if(ref.current && observer) {
-                observer.observe(ref.current)
-            }
-    
+        if(ref.current && observer.current) {
+            observer.current.observe(ref.current)
         }
 
         return () => {
-            if(typeof window !=='undefined' && ref.current && observer) {
-                observer.disconnect(ref.current)
+            if(typeof window !=='undefined' && ref.current && observer.current) {
+                observer.current.disconnect(ref.current)
             }
         }
-    }, [ref, options, callback])
+    }, [ref, options, observer, callbackObserve])
 }
 
 export default useIntersectionObserver
