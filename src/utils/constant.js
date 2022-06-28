@@ -46,6 +46,25 @@ export const FAKULTAS_LINKS = [
     },
 ]
 
+export const SOSMED_LINKS = [
+    {
+        href: '#',
+        title: 'Twitter',
+    },
+    {
+        href: '#',
+        title: 'Instagram',
+    },
+    {
+        href: '#',
+        title: 'Facebook',
+    },
+    {
+        href: '#',
+        title: 'Youtube',
+    },
+]
+
 export const FIK_LINKS = [
     {
         href: '#',
@@ -135,5 +154,27 @@ export const ORGANISASI_LINKS = [
     {
         href: '#',
         title: 'MAYPALA'
+    },
+]
+
+export const CONTACT_LINKS = [
+    
+    {
+        title: "Email",
+        contact: "Yayasan@amikom.ac.id",
+        url: '#',
+    },
+    {
+        title: "Email",
+        contact: "amikom@amikom.ac.id",
+        url: '#',
+    },
+    {
+        title: "Telp",
+        contact: "(0274) 884201 - 207",
+    },
+    {
+        title: "Fax",
+        contact: "(0274) 884208",
     },
 ]

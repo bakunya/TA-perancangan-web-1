@@ -16,7 +16,7 @@ const MainMenu = ({ isShow, onHide }) => {
     return (
         <div 
             className={clsx(
-                !isShow ? '-translate-y-[1000px] opacity-0': 'translate-y-0 opacity-100',
+                !isShow ? '-translate-y-[110vh] opacity-0': 'translate-y-0 opacity-100',
                 "fixed inset-0 bg-primary transition-all duration-500"
             )}
 
