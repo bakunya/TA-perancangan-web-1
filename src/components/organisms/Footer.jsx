@@ -5,6 +5,7 @@ import logo from '@/logo/amikom.png'
 import Container from '@/atoms/Container'
 import Fallback from '@/atoms/SuspenseFallback'
 import { CONTACT_LINKS, FAKULTAS_LINKS, SOSMED_LINKS } from '@/utils/constant'
+import Anchor from '@/atoms/Anchor'
 
 const LazyImage = dynamic(() => import('@/atoms/Image/Lazy'), { ssr: false })
 
@@ -17,7 +18,7 @@ const Footer = () => {
             >
                 <div className="col-span-1 text-white">
                     <div className="w-fit lg:mx-auto">
-                        <Link href="#">
+                        <Link href="/">
                             <a>
                                 <React.Suspense fallback={<Fallback />}>
                                     <LazyImage src={logo.src} alt="logo" containerClassName="w-[150px] sm:w-[200px]" loaderType="white" />
@@ -35,7 +36,7 @@ const Footer = () => {
                                             <td className='text-sm'>
                                                 {
                                                     itm?.url 
-                                                        ? <a href={itm.url}>{itm.contact}</a>
+                                                        ? <Anchor href={itm.url}>{itm.contact}</Anchor>
                                                         : itm.contact
                                                 }    
                                             </td>
@@ -51,7 +52,7 @@ const Footer = () => {
                         <h1 className='font-bold text-xl mt-5 lg:mt-0'>Fakultas</h1>
                         {
                             FAKULTAS_LINKS.map((itm, i) => (
-                                <a key={i} href={itm.href} className='text-sm mt-4 hover:underline active:underline'>{itm.title}</a>
+                                <Anchor key={i} href={itm.href} className='text-sm mt-4 hover:underline active:underline'>{itm.title}</Anchor>
                             ))
                         }
                     </div>
@@ -61,7 +62,7 @@ const Footer = () => {
                         <h1 className='font-bold text-xl mt-5 lg:mt-0'>Media Sosial</h1>
                         {
                             SOSMED_LINKS.map((itm, i) => (
-                                <a key={i} href={itm.href} className='text-sm mt-4 hover:underline active:underline'>{itm.title}</a>
+                                <a target="_blank" key={i} href={itm.href} className='text-sm mt-4 hover:underline active:underline'>{itm.title}</a>
                             ))
                         }
                     </div>

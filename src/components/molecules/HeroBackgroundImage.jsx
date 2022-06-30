@@ -1,20 +1,16 @@
 import React from 'react'
-import dynamic from 'next/dynamic'
-import Fallback from '@/atoms/SuspenseFallback'
-
-const LazyImage = dynamic(() => import('@/atoms/Image/Lazy'), { ssr: false })
+import LazyImage from '@/atoms/Image/Lazy'
 
 const HeroBackgroundImage = ({ src }) => {
     return (
         <>
-            <React.Suspense fallback={<Fallback />}>
-                <LazyImage 
-                    src={src} 
-                    imgClassName="object-cover w-[100%] h-full hue-rotate-90 sepia saturate-50 "
-                    containerClassName="inset-0"
-                    containerPosition="absolute -z-[2]"
-                />
-            </React.Suspense>
+            <LazyImage 
+                src={src} 
+                withLoader={false}
+                containerClassName="inset-0"
+                containerPosition="absolute -z-[2]"
+                imgClassName="object-cover w-[100%] h-full hue-rotate-90 sepia saturate-50 "
+            />
             <span className="bg-primary/80 absolute inset-0 -z-[1]" />
         </>
     )

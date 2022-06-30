@@ -1,16 +1,14 @@
 import clsx from 'clsx'
 import React from 'react'
 import Link from 'next/link'
-import dynamic from 'next/dynamic'
 import logo from '@/logo/amikom.png'
 import { BsX } from 'react-icons/bs'
 import Container from '@/atoms/Container'
+import LazyImage from '@/atoms/Image/Lazy'
 import Button from '@/atoms/NavBarMenu/Button'
-import Fallback from '@/atoms/SuspenseFallback'
 import MainMenuContent from './MainMenuContent'
 import MenuImageBackground from '@/atoms/Image/MenuImageBackground'
 
-const LazyImage = dynamic(() => import('@/atoms/Image/Lazy'), { ssr: false })
 
 const MainMenu = ({ isShow, onHide }) => {
     return (
@@ -27,11 +25,9 @@ const MainMenu = ({ isShow, onHide }) => {
                 </div>
                 
                 <div className="bg-primary flex justify-between items-center h-[78px] pl-5">
-                    <Link href="#">
+                    <Link href="/">
                         <a className='scale-[0.8]'>
-                            <React.Suspense fallback={<Fallback />}>
-                                <LazyImage src={logo.src} alt="logo" containerClassName="w-[150px] sm:w-[200px]" loaderType="white" />
-                            </React.Suspense>
+                            <LazyImage src={logo.src} alt="logo" containerClassName="w-[150px] sm:w-[200px]" loaderType="white" />
                         </a>
                     </Link>
                     <div className="flex justify-end text-white bg-primary">

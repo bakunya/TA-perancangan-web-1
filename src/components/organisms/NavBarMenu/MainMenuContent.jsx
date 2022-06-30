@@ -1,13 +1,10 @@
 import React from 'react'
-import dynamic from 'next/dynamic'
 import Fallback from '@/atoms/SuspenseFallback'
-
 import useResponsive from '@/hooks/useResponsive'
-const MainMenuContentTablet = dynamic(() => import('./MainMenuContent.Tablet'), { suspense: true })
-const MainMenuContentMobile = dynamic(() => import('./MainMenuContent.Mobile'), { suspense: true })
-const MainMenuContentDesktop = dynamic(() => import('./MainMenuContent.Desktop'), { suspense: true })
 
-
+const MainMenuContentTablet = React.lazy(() => import('./MainMenuContent.Tablet'))
+const MainMenuContentMobile = React.lazy(() => import('./MainMenuContent.Mobile'))
+const MainMenuContentDesktop = React.lazy(() => import('./MainMenuContent.Desktop'))
 
 const MainMenuContent = () => {
     const isXl = useResponsive('xl')

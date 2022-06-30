@@ -4,7 +4,7 @@ const useIntersectionObserver = (ref, options, callbackObserve) => {
     const observer = useRef(null)
     
     useEffect(() => {
-        if(typeof window !=='undefined' && !observer.current) {
+        if(typeof window !=='undefined') {
             observer.current =  new IntersectionObserver((entries, observer) => {
                 if(callbackObserve instanceof Function) callbackObserve(observer, entries, ref)
             }, options)    

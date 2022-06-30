@@ -34,7 +34,7 @@ const ItemsMainMenu = () => {
                     "mt-5 sm:mt-8 transition-all duration-300"
                 )}
             >
-                <ItemMenu type='link' href="#">Award</ItemMenu>
+                <ItemMenu type='link' href="/award">Award</ItemMenu>
             </div>
             <div 
                 className={clsx(
@@ -58,7 +58,7 @@ const ItemsMainMenu = () => {
                     "mt-5 sm:mt-8 mb-12 transition-all duration-300"
                 )}
             >
-                <ItemMenu type='link' href="#">PMB</ItemMenu>
+                <ItemMenu type='link' href="/pmb">PMB</ItemMenu>
             </div>
         </div>
     )

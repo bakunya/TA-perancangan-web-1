@@ -7,6 +7,7 @@
             "@/store/*": ["src/store/*"],
             "@/logo/*": ["src/assets/images/logo/*"],
             "@/atoms/*": ["src/components/atoms/*"],
+            "@/img/*": ["src/assets/images/img/*"],
             "@/illust/*": ["src/assets/images/illust/*"],
             "@/templates/*": ["src/components/templates/*"],
             "@/organisms/*": ["src/components/organisms/*"],

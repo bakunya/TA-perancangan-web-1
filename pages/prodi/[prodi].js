@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import Prodi from '@/templates/Prodi'
+import Prodi from '@/templates/ProdiTemplate'
 import React from 'react'
 
 export default function ProdiPage() {
