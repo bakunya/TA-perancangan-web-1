@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Home | Amikom</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <!-- wrapper -->
+    <div class="min-w-screen"> 
+        <!-- card -->
+        <div class="max-w-[1400px] bg-primary p-5">
+            <div class="flex justify-between items-center">
+                <a href="#">
+                    <img src="./assets/images/logo/amikom.png" height="50" width="150"  />
+                </a>
+                <div class="md:flex justify-end hidden">
+                    <a href="#" class='mr-8 text-white'>Profil</a>
+                    <a href="#" class='mr-8 text-white'>Award</a>
+                    <a href="#" class='mr-8 text-white'>Fakultas</a>
+                    <a href="#" class='mr-8 text-white'>Organisasi</a>
+                    <a href="#" class='text-white'>PMB</a>
+                </div>
+                <button class="text-white outline-none border-none md:hidden" id="nav-open-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="absolute inset-0 w-screen h-screen h-fit md:hidden max-w-[1400px] bg-primary p-5 -translate-y-[100vh] transition-all duration-300" id="nav-mobile-container">
+        <div class="flex justify-end flex-col">
+            <div class="flex justify-between items-center">
+                <a href="#">
+                    <img src="./assets/images/logo/amikom.png" height="50" width="150"  />
+                </a>
+                <button class="text-white outline-none border-none md:hidden" id="nav-close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                    </svg>
+                </button>
+            </div>
+            <a href="#" class='text-white ml-3 mt-10'>Profil</a>
+            <a href="#" class='text-white ml-3 mt-3'>Award</a>
+            <a href="#" class='text-white ml-3 mt-3'>Fakultas</a>
+            <a href="#" class='text-white ml-3 mt-3'>Organisasi</a>
+            <a href="#" class='text-white ml-3 mt-3'>PMB</a>
+        </div>
+    </div>
+    <!-- END NAVBAR -->
+
+    <!-- HOME-HERO -->
+    <!-- wrapper -->
+    <div class="min-w-screen -mt-1 pt-[78px] bg-primary min-h-screen">
+        <!-- card -->
+        <div class="max-w-[1400px] bg-primary p-5">
+            <div class="grid place-content-center">
+                <div class='max-w-[900px] mx-auto mt-24 mb-44'>
+                    <h1 class='font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white text-center'>“Creative<br />Economy Park”</h1>
+                    <p class='text-center text-base sm:text-lg text-white mx-auto mt-10 max-w-[700px]'>Amikom Creative Economy Park (ACEP) yang telah bekerjasama dengan perusahaan di Silicon Valley dan Hollywood menjadika peluang baru bagi mahasiswa untuk melakukan internship dan bagi alumni untuk bekerja di Silicon Valley dan Hollywood.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="min-w-screen -mt-1 bg-primary pb-44">
+        <!-- card -->
+        <div class="max-w-[1400px] bg-primary p-5">
+            <div class="max-w-[370px] ml-auto mr-5">
+                <p class="text-right text-white text-sm sm:text-base pl-5">Menjadi perguruan tinggi unggulan dunia dalam bidang ekonomi kreatif yang berbasis kewirausahaan yang menebar kebajikan.</p>
+            </div>
+        </div>
+    </div>
+    <!-- END HOME-HERO -->
+
+    <!-- CARD -->
+    <div class="min-w-screen mt-44">
+        <!-- card -->
+        <div class="max-w-[1400px] p-5 px-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
+                <div class="p-8 rounded-xl transition-all duration-300 border hover:shadow-xl hover:scale-[1] scale-[0.95]">
+                    <h1 class="font-bold text-2xl capitalize mb-10">Lorem Ipsum</h1>
+                    <p class='mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quidem eius cum distinctio optio nesciunt culpa reprehenderit delectus? Blanditiis totam ipsa quibusdam dolores temporibus dolorem nostrum atque sit debitis amet.</p>
+                    <a href="#" class="text-primary w-full group flex items-center font-bold">
+                        More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="ml-4 group-hover:ml-6 transition-all bi bi-arrow-right-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CARD -->
+
+    <!-- ALASAN -->
+    <div class="min-w-screen mt-44">
+        <!-- card -->
+        <div class="max-w-[1400px] p-5 px-10">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="col-span-1">
+                    <img src="./assets/images/illust/alasan.png" class="mx-auto block">
+                </div>
+                <div class="col-span-1 md:ml-auto">
+                    <h1 class="text-2xl sm:text-3xl xl:text-4xl font-semibold mt-8 text-center md:text-left md:mt-0">Alasan Mengapa Kuliah di Amikom?</h1>
+                    <div class="grid-cols-12 grid items-start mt-10">
+                        <div class="col-span-2">
+                            <div class="rounded-full w-6 h-6 mt-1 block ml-auto mr-5 bg-gray-400/50"></div>
+                        </div>
+                        <div class="col-span-10">
+                            <p class="text-sm text-gray-600 leading-loose relative">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="grid-cols-12 grid items-start mt-5">
+                        <div class="col-span-2">
+                            <div class="rounded-full w-6 h-6 mt-1 block ml-auto mr-5 bg-gray-400/50"></div>
+                        </div>
+                        <div class="col-span-10">
+                            <p class="text-sm text-gray-600 leading-loose relative">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur unde id neque, <strong class="font-bold">impedit necessitatibus</strong> tempore.</p>
+                        </div>
+                    </div>
+                    <div class="grid-cols-12 grid items-start mt-5">
+                        <div class="col-span-2">
+                            <div class="rounded-full w-6 h-6 mt-1 block ml-auto mr-5 bg-gray-400/50"></div>
+                        </div>
+                        <div class="col-span-10">
+                            <p class="text-sm text-gray-600 leading-loose relative">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END ALASAN -->
+
+    <!-- FOOTER -->
+    <div class="min-w-screen mt-44 bg-primary">
+        <!-- card -->
+        <div class="max-w-[1400px] p-5 px-10 grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-0 justify-between items-start">
+            <div class="col-span-1 text-white">
+                <div class="w-fit lg:mx-auto">
+                    <a href="#">
+                        <img src="./assets/images/logo/amikom.png" height="50" width="150"  />
+                    </a>
+                    <p class='mt-7 text-sm max-w-[300px] font-light leading-loose'>Diselenggarakan oleh: <br /><strong class='font-bold'>Yayasan Amikom Yogyakarta</strong><br />Jl. Padjajaran, Ring Road Utara, Kel. Condongcatur, Kec. Depok, Kab. Sleman, Prop. Daerah Istimewa Yogyakarta</p>
+                    <table class="mt-5">
+                        <tbody>
+                            <tr class='mt-2 block'>
+                                <td class='text-sm min-w-[45px] text-white'>lorem</td>
+                                <td class='text-sm min-w-[10px] text-white'>:</td>
+                                <td class='text-sm text-white'>lorem</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-span-1 text-white">
+                <div class="w-fit lg:mx-auto flex flex-col">
+                    <h1 class='font-bold text-xl mt-5 lg:mt-0'>Fakultas</h1>
+                    <a href="#" class='text-sm mt-4 hover:underline active:underline'>lorem</a>
+                </div>
+            </div>
+            <div class="col-span-1 text-white">
+                <div class="w-fit lg:mx-auto flex flex-col">
+                    <h1 class='font-bold text-xl mt-5 lg:mt-0'>Media Sosial</h1>
+                    <a target="_blank" href="#" class='text-sm mt-4 hover:underline active:underline'>lorem</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="min-w-screen bg-primary">
+        <!-- card -->
+        <div class="max-w-[1400px] p-5 py-10 border-t border-gray-500">
+            <p class="text-white text-center">© Bakunya's Team</p>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+
+
+    <script src="./assets/js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply font-poppins;
+    }
+
+    button, a {
+        @apply outline-none;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    @apply w-2;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    @apply rounded bg-primary;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    @apply rounded bg-secondary;
+}
