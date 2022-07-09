@@ -1,6 +1,7 @@
 module.exports = {
     content: [
-      "./**/*.{html, js}",
+      "./**/*.html",
+      "./assets/**/*.js",
     ],
     theme: {
       extend: {
@@ -16,7 +17,7 @@ module.exports = {
           fontFamily: {
               'poppins': ['Poppins', 'sans-serif'],
               'display': ['Playfair Display', 'serif'],
-          }
+          },
       },
     },
     plugins: [],

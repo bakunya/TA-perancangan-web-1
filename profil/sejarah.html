@@ -1,0 +1,179 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/css/index.css">
+        <title>Profil | Amikom</title>
+    </head>
+    <body>
+
+        <nav>
+            <!-- NAVBAR -->
+            <!-- wrapper -->
+            <div class="transition-all duration-500 min-w-screen bg-primary/80 left-0 right-0 top-0 z-[9]" id="nav-links"> 
+                <!-- card -->
+                <div class="max-w-[1400px] p-5 mx-auto">
+                    <div class="flex justify-between items-center">
+                        <a href="/">
+                            <img src="/assets/images/logo/amikom.png" height="50" width="150"  />
+                        </a>
+                        <div class="md:flex justify-end hidden">
+                            <a href="/profil" class='mr-8 text-white'>Profil</a>
+                            <a href="/award" class='mr-8 text-white'>Award</a>
+                            <a href="/fakultas" class='mr-8 text-white'>Fakultas</a>
+                            <a href="/organisasi" class='mr-8 text-white'>Organisasi</a>
+                            <a href="/pmb" class='text-white'>PMB</a>
+                        </div>
+                        <button class="text-white outline-none border-none md:hidden" id="nav-open-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="fixed z-[99] h-screen overflow-y-auto opacity-0 top-0 right-0 -translate-y-[110vh] left-0 w-screen md:hidden max-w-[1400px] bg-primary p-5 transition-all duration-500" id="nav-mobile-container">
+                <div class="flex justify-end flex-col">
+                    <div class="flex justify-between items-center">
+                        <a href="/">
+                            <img src="/assets/images/logo/amikom.png" height="50" width="150"  />
+                        </a>
+                        <button class="text-white outline-none border-none md:hidden" id="nav-close-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="/profil" class='text-white ml-3 mt-10'>Profil</a>
+                    <a href="/award" class='text-white ml-3 mt-3'>Award</a>
+                    <a href="/fakultas" class='text-white ml-3 mt-3'>Fakultas</a>
+                    <a href="/organisasi" class='text-white ml-3 mt-3'>Organisasi</a>
+                    <a href="/pmb" class='text-white ml-3 mt-3'>PMB</a>
+                </div>
+            </div>
+            <!-- END NAVBAR -->
+        </nav>
+    
+        <main>
+            <!-- HOME-HERO -->
+            <!-- wrapper -->
+            <div class="min-w-screen -mt-1 bg-primary min-h-screen relative pb-20">
+                <img data-src="/assets/images/img/profil.png" alt="profile" class="transition-all duration-500 inset-0 absolute object-cover object-center w-full h-full opacity-0">
+                <div class="inset-0 absolute w-full h-full bg-primary/80"></div>
+                <div class="max-w-[1400px] p-5 mx-auto min-h-full flex align-end justify-end flex-col pt-10">
+                    <section class="z-[7] relative">
+                        <div class="grid-cols-1 md:grid-cols-2 grid items-end">
+                            <div id="nav-links-show-trigger">
+                                <h1 class="text-white text-4xl font-display font-semibold ">Sejarah Singkat Amikom</h1>
+                                <div class="bg-white h-[2px] mt-2 w-44"></div>
+                            </div>
+                            <div class="mt-12 md:mt-0 p-8 h-auto rounded-xl border border-white backdrop-blur shadow-lg shadow-white/20">
+                                <h1 class="text-white">Sejarah singkat universitas Amikom Yogyakarta.</h1>
+                                <img data-src="/assets/images/img/profil-4.jpg" alt="profile" class="transition-all duration-500 h-auto object-cover object-center w-[90%] ml-auto mt-5 border border-white opacity-0">
+                            </div>
+                        </div>
+                        <p class="text-xl text-white mt-12 leading-loose tracking-wide font-semibold">
+                            Universitas Amikom Yogyakarta merupakan perubahan dari Sekolah Tinggi Manajemen Informatika dan Komputer Amikom Yogyakarta. Sebelumnya Sekolah Tinggi Manajemen Informatika dan Komputer Amikom Yogyakarta, merupakan perubahan dari Akademi Manajemen Informatika dan Komputer Amikom Yogyakarta yang mendapatkan status terdaftar berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 084/D/O/1994 tanggal 11 Oktober 1994.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <!-- END HOME-HERO -->
+
+            <!-- CONTENT -->
+            <div class="grid-cols-1 grid mb-44 px-5 mx-auto">
+                <p class="mt-20 text-md tracking-wide leading-loose indent-[3rem]">Universitas Amikom Yogyakarta merupakan perubahan dari Sekolah Tinggi Manajemen Informatika dan Komputer Amikom Yogyakarta. Sebelumnya Sekolah Tinggi Manajemen Informatika dan Komputer Amikom Yogyakarta, merupakan perubahan dari Akademi Manajemen Informatika dan Komputer Amikom Yogyakarta yang mendapatkan status terdaftar berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 084/D/O/1994 tanggal 11 Oktober 1994. Perubahan bentuk ini dilakukan untuk mempermudah mencapai visinya sebagai perguruan tinggi unggulan dunia dalam bidang ekonomi kreatif berbasis entrepreneurship.</p>
+                <p class="mt-10 text-md tracking-wide leading-loose indent-[3rem]">Universitas Amikom Yogyakarta yang sebelumnya Sekolah Tinggi Manajemen Informatika dan Komputer Amikom Yogyakarta telah menjadi Perguruan Tinggi Swasta Percontohan Dunia Model Private Entrepreneur oleh UNESCO (Unesco, A New Dynamic : Private Higher Education, 2009): The academy concentrates on innovative technologies. It has an enrolment of more than 7,600 students, which compares strongly with nearby institutions that are closing because of a shortage of students. The academy produces graduates who are very popular in the labor market. The academy also runs several commercial enterprises: tele- vision channels, radio channels, cartoon production, software design, internet services, advertising, computer systems, consultancy and mo- bile networks. These commercial setups also provide valuable ground for student internships. The academy claims to produce 'graduates with global qualities, productive, entrepreneurial, professionals, especially in knowledge based on computer and informatics'.</p>
+                <p class="mt-10 text-md tracking-wide leading-loose indent-[3rem]">Universitas Amikom Yogyakarta mempunyai peranan yang besar dalam dunia pendidikan sebagai pusat pengembangan ekonomi kreatif untuk meningkatkan daya saing bangsa, telah membuktikan mampu mengatasi berbagai kesulitan dan hambatan dalam pengelolaannya. Amikom Creative Economy Park (ACEP) yang telah bekerjasama dennen perusahaan di Silicon Valley dan Hollywood menjadika peluang baru bagi mahasiswa untuk melakukan internship dan bagi alumni untuk bekerja di Silicon Valley dan Hollywood.</p>
+                <p class="mt-10 text-md tracking-wide leading-loose indent-[3rem]">Saat ini kepercayaan masyarakat cukup baik, dibuktikan diantaranya dengan meningkatnya jumlah mahasiswa dari tahun ketahun pada 2020 mempunyai 13.713 mahasiswa untuk Program Studi. Mulai dari Program Studi Diploma III Manajemen Informatika, Program Studi Diploma III Teknik Informatika, Program Studi S1 Sistem Informasi, Program Studi S1 Teknik Informatika dan Program Studi S2 Magister Teknik Informatika. Bahkan Program Magister Teknik Informatika dipercaya oleh Direktorat Jendral pendidikan Tinggi dikala itu bersama 5 Perguruan Tinggi lain seperti (Universitas Indonesia, Universitas Gadjah Mada, Institut Teknologi Bandung, Institut Sepuluh November Surabaya dan Universitas Bina Nusantara) yang diberikan hibah sebagai proyek percontohan Pendidikan Jarak Jauh (PJJ).</p>
+                <p class="mt-10 text-md tracking-wide leading-loose indent-[3rem]">Pada 2019, Universitas Amikom Yogyakarta menurut QS Stars dalam Computer Science and Information Systems merupakan Perguruan Tinggi Swasta Rating Terbaik di Indonesia. Pada masa mendatang, Universitas Amikom berkeinginan untuk tetap lebih maju sesuai dengan jaman dan tantangannya yang terus berubah. Oleh karenanya dengan semakin berkembang dan dewasanya Universitas Amikom Yogyakarta serta kebutuhan untuk memenuhi kepercayaan masyarakat dan tuntutan perubahan jaman yang sulit diprediksi, diperlukan strategi dan sasaran pengembangan yang terencana, sistematis dan terukur. Dengan memanfaatkan berbagai keunggulan strategis yang dimiliki secara optimal, evaluasi kondisi saat ini serta berpijak pada visi dan misi Universitas Amikom Yogyakarta, maka perlu disusun sebuah rencana strategis yang akan memberikan arah serta menjadi acuan bagi Universitas Amikom Yogyakarta dalam perjalanan kedepan.</p>
+
+            </div>
+            <!-- END CONTENT -->
+
+            <!-- LINKS -->
+            <section class="my-44 px-5 mx-auto w-[300px] sm:w-[500px]">
+                <h1 class="font-bold text-center font-display text-2xl">Lihat Juga</h1>
+                <div class="flex flex-col">
+                    <a href="/profil" class="w-full border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500">Profil</a>
+                    <a href="/profil/sejarah.html" class="w-full border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500">Sejarah</a>
+                    <a href="/profil/visi-misi.html" class="w-full border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500">Visi & Misi</a>
+                    <a href="/profil/nilai-tujuan.html" class="w-full border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500">Nilai & Tujuan</a>
+                </div>
+            </section>
+            <!-- END LINKS -->
+        </main>
+    
+        <footer>
+            <!-- FOOTER -->
+            <div class="min-w-screen mt-44 bg-primary">
+                <!-- card -->
+                <div class="mx-auto max-w-[1400px] p-5 px-10 grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-0 justify-between items-start">
+                    <div class="col-span-1 text-white">
+                        <div class="w-fit lg:mx-auto">
+                            <a href="#">
+                                <img src="/assets/images/logo/amikom.png" height="50" width="150"  />
+                            </a>
+                            <p class='mt-7 text-sm max-w-[300px] font-light leading-loose'>Diselenggarakan oleh: <br /><strong class='font-bold'>Yayasan Amikom Yogyakarta</strong><br />Jl. Padjajaran, Ring Road Utara, Kel. Condongcatur, Kec. Depok, Kab. Sleman, Prop. Daerah Istimewa Yogyakarta</p>
+                            <table class="mt-5">
+                                <tbody>
+                                    <tr class='mt-2 block'>
+                                        <td class='text-sm min-w-[45px] text-white'>Email</td>
+                                        <td class='text-sm min-w-[10px] text-white'>:</td>
+                                        <td class='text-sm text-white'>Yayasan@amikom.ac.id</td>
+                                    </tr>
+                                    <tr class='mt-2 block'>
+                                        <td class='text-sm min-w-[45px] text-white'>Email</td>
+                                        <td class='text-sm min-w-[10px] text-white'>:</td>
+                                        <td class='text-sm text-white'>	amikom@amikom.ac.id</td>
+                                    </tr>
+                                    <tr class='mt-2 block'>
+                                        <td class='text-sm min-w-[45px] text-white'>Telp</td>
+                                        <td class='text-sm min-w-[10px] text-white'>:</td>
+                                        <td class='text-sm text-white'>(0274) 884201 - 207</td>
+                                    </tr>
+                                    <tr class='mt-2 block'>
+                                        <td class='text-sm min-w-[45px] text-white'>Fax</td>
+                                        <td class='text-sm min-w-[10px] text-white'>:</td>
+                                        <td class='text-sm text-white'>(0274) 884208</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-span-1 text-white">
+                        <div class="w-fit lg:mx-auto flex flex-col">
+                            <h1 class='font-bold text-xl mt-5 lg:mt-0'>Fakultas</h1>
+                            <a href="/fakultas/fik" class='text-sm mt-4 hover:underline active:underline'>Fakultas Ilmu Komputer</a>
+                            <a href="/fakultas/fst" class='text-sm mt-4 hover:underline active:underline'>Fakultas Sains Teknologi</a>
+                            <a href="/fakultas/fes" class='text-sm mt-4 hover:underline active:underline'>Fakultas Ekonomi & Sosial</a>
+                        </div>
+                    </div>
+                    <div class="col-span-1 text-white">
+                        <div class="w-fit lg:mx-auto flex flex-col">
+                            <h1 class='font-bold text-xl mt-5 lg:mt-0'>Media Sosial</h1>
+                            <a target="_blank" href="http://instagram.com/amikomjogja" class='text-sm mt-4 hover:underline active:underline'>Instagram</a>
+                            <a target="_blank" href="http://twitter.com/amikomjogja" class='text-sm mt-4 hover:underline active:underline'>Twitter</a>
+                            <a target="_blank" href="https://www.facebook.com/amikomjogja/" class='text-sm mt-4 hover:underline active:underline'>Faceebok</a>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCNMwEZ8Y3JIod-d22o8yxZQ?view_as=subscriber" class='text-sm mt-4 hover:underline active:underline'>Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <div class="min-w-screen bg-primary">
+                <!-- card -->
+                <div class="max-w-[1400px] p-5 py-10 border-t border-gray-500 mx-auto">
+                    <p class="text-white text-center">© Bakunya's Team</p>
+                </div>
+            </div>
+            <!-- END FOOTER -->
+        </footer>
+    
+    
+        <script src="/assets/js/navbar.js"></script>
+        <script src="/assets/js/lazyimage.js"></script>
+        <!-- <script src="/assets/js/nav-trigger.js"></script> -->
+    </body>
+</html>
