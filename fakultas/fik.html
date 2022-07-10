@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Fakultas | Amikom</title>
+</head>
+
+<body>
+    <nav>
+        <!-- NAVBAR -->
+        <!-- wrapper -->
+        <div class="transition-all duration-500 min-w-screen bg-primary/80 left-0 right-0 top-0 z-[9]" id="nav-links"> 
+            <!-- card -->
+            <div class="max-w-[1400px] p-5 mx-auto">
+                <div class="flex justify-between items-center">
+                    <a href="/">
+                        <img src="/assets/images/logo/amikom.png" height="50" width="150"  />
+                    </a>
+                    <div class="md:flex justify-end hidden">
+                        <a href="/profil" class='mr-8 text-white'>Profil</a>
+                        <a href="/award" class='mr-8 text-white'>Award</a>
+                        <a href="/fakultas" class='mr-8 text-white'>Fakultas</a>
+                        <a href="/organisasi" class='mr-8 text-white'>Organisasi</a>
+                        <a href="/pmb" class='text-white'>PMB</a>
+                    </div>
+                    <button class="text-white outline-none border-none md:hidden" id="nav-open-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="fixed z-[99] h-screen overflow-y-auto opacity-0 top-0 right-0 -translate-y-[110vh] left-0 w-screen md:hidden max-w-[1400px] bg-primary p-5 transition-all duration-500" id="nav-mobile-container">
+            <div class="flex justify-end flex-col">
+                <div class="flex justify-between items-center">
+                    <a href="/">
+                        <img src="/assets/images/logo/amikom.png" height="50" width="150"  />
+                    </a>
+                    <button class="text-white outline-none border-none md:hidden" id="nav-close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <a href="/profil" class='text-white ml-3 mt-10'>Profil</a>
+                <a href="/award" class='text-white ml-3 mt-3'>Award</a>
+                <a href="/fakultas" class='text-white ml-3 mt-3'>Fakultas</a>
+                <a href="/organisasi" class='text-white ml-3 mt-3'>Organisasi</a>
+                <a href="/pmb" class='text-white ml-3 mt-3'>PMB</a>
+            </div>
+        </div>
+        <!-- END NAVBAR -->
+    </nav>
+
+    <main>
+        <!-- HOME-HERO -->
+        <!-- wrapper -->
+        <div class="min-w-screen -mt-1 bg-primary min-h-screen relative pb-20">
+            <img data-src="/assets/images/img/coding.jpeg" alt="profile" class="transition-all duration-500 inset-0 absolute object-cover object-center w-full h-full opacity-0">
+            <div class="inset-0 absolute w-full h-full bg-primary/80"></div>
+            <div class="max-w-[1400px] p-5 mx-auto min-h-full flex align-end justify-end flex-col pt-10">
+                <section class="z-[7] relative">
+                    <div class="grid-cols-1 md:grid-cols-2 grid items-end">
+                        <div id="nav-links-show-trigger">
+                            <h1 class="text-white text-4xl font-display font-semibold ">Fakultas Ilmu Komputer Amikom</h1>
+                            <div class="bg-white h-[2px] mt-2 w-44"></div>
+                        </div>
+                        <div class="mt-12 md:mt-0 p-8 h-auto rounded-xl border border-white backdrop-blur shadow-lg shadow-white/20">
+                            <h1 class="text-white">Fakultas Ilmu Komputer Universitas AMIKOM Yogyakarta</h1>
+                            <img data-src="/assets/images/img/profil-1.jpg" alt="profile" class="transition-all duration-500 h-auto object-cover object-center w-[90%] ml-auto mt-5 border border-white opacity-0">
+                        </div>
+                    </div>
+                    <p class="text-xl text-white mt-12 leading-loose tracking-wide font-semibold">
+                        Ilmu Komputer merupakan bidang studi yang identik dengan computer programming. Mahasiswa akan dibekali keterampilan menyusun algoritma dan programming untuk mengembangkan sebuah aplikasi maupun sistem perangkat lunak. Jadi, pada dasarnya kamu akan belajar bagaimana cara agar komputer mampu melakukan berbagai hal yang diinginkan penggunanya. Di jurusan ini, ide-ide kreatifmu bisa diwujudkan apalagi di dunia informasi digital yang semakin tak terbatas ini!
+                    </p>
+                </section>
+            </div>
+        </div>
+        <!-- END HOME-HERO -->
+
+        <!-- LINKS -->
+        <section class="my-44 px-5 mx-auto w-[300px] sm:w-[500px] relative">
+            <h1 class="font-bold text-center font-display text-3xl capitalize">program studi</h1>
+            <div class="flex flex-col">
+                <a class="w-full capitalize border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500" href="/prodi/s1-ti.html">s1 informatika</a>
+                <a class="w-full capitalize border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500" href="/prodi/s1-tk.html">s1 teknik komputer</a>
+                <a class="w-full capitalize border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500" href="/prodi/s1-si.html">s1 sistem informasi</a>
+                <a class="w-full capitalize border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500" href="/prodi/s1-tin.html">s1 teknologi informasi</a>
+                <a class="w-full capitalize border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500" href="/prodi/d3-ti.html">d3 teknik informatika</a>
+                <a class="w-full capitalize border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500" href="/prodi/d3-mi.html">d3 manajemen informatika</a>
+            </div>
+        </section>
+        <!-- END LINKS -->
+
+    </main>
+
+    <footer>
+        <!-- FOOTER -->
+        <div class="min-w-screen mt-44 bg-primary">
+            <!-- card -->
+            <div class="mx-auto max-w-[1400px] p-5 px-10 grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-0 justify-between items-start">
+                <div class="col-span-1 text-white">
+                    <div class="w-fit lg:mx-auto">
+                        <a href="#">
+                            <img src="/assets/images/logo/amikom.png" height="50" width="150"  />
+                        </a>
+                        <p class='mt-7 text-sm max-w-[300px] font-light leading-loose'>Diselenggarakan oleh: <br /><strong class='font-bold'>Yayasan Amikom Yogyakarta</strong><br />Jl. Padjajaran, Ring Road Utara, Kel. Condongcatur, Kec. Depok, Kab. Sleman, Prop. Daerah Istimewa Yogyakarta</p>
+                        <table class="mt-5">
+                            <tbody>
+                                <tr class='mt-2 block'>
+                                    <td class='text-sm min-w-[45px] text-white'>Email</td>
+                                    <td class='text-sm min-w-[10px] text-white'>:</td>
+                                    <td class='text-sm text-white'>Yayasan@amikom.ac.id</td>
+                                </tr>
+                                <tr class='mt-2 block'>
+                                    <td class='text-sm min-w-[45px] text-white'>Email</td>
+                                    <td class='text-sm min-w-[10px] text-white'>:</td>
+                                    <td class='text-sm text-white'>	amikom@amikom.ac.id</td>
+                                </tr>
+                                <tr class='mt-2 block'>
+                                    <td class='text-sm min-w-[45px] text-white'>Telp</td>
+                                    <td class='text-sm min-w-[10px] text-white'>:</td>
+                                    <td class='text-sm text-white'>(0274) 884201 - 207</td>
+                                </tr>
+                                <tr class='mt-2 block'>
+                                    <td class='text-sm min-w-[45px] text-white'>Fax</td>
+                                    <td class='text-sm min-w-[10px] text-white'>:</td>
+                                    <td class='text-sm text-white'>(0274) 884208</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-span-1 text-white">
+                    <div class="w-fit lg:mx-auto flex flex-col">
+                        <h1 class='font-bold text-xl mt-5 lg:mt-0'>Fakultas</h1>
+                        <a href="/fakultas/fik" class='text-sm mt-4 hover:underline active:underline'>Fakultas Ilmu Komputer</a>
+                        <a href="/fakultas/fst" class='text-sm mt-4 hover:underline active:underline'>Fakultas Sains Teknologi</a>
+                        <a href="/fakultas/fes" class='text-sm mt-4 hover:underline active:underline'>Fakultas Ekonomi & Sosial</a>
+                    </div>
+                </div>
+                <div class="col-span-1 text-white">
+                    <div class="w-fit lg:mx-auto flex flex-col">
+                        <h1 class='font-bold text-xl mt-5 lg:mt-0'>Media Sosial</h1>
+                        <a target="_blank" href="http://instagram.com/amikomjogja" class='text-sm mt-4 hover:underline active:underline'>Instagram</a>
+                        <a target="_blank" href="http://twitter.com/amikomjogja" class='text-sm mt-4 hover:underline active:underline'>Twitter</a>
+                        <a target="_blank" href="https://www.facebook.com/amikomjogja/" class='text-sm mt-4 hover:underline active:underline'>Faceebok</a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCNMwEZ8Y3JIod-d22o8yxZQ?view_as=subscriber" class='text-sm mt-4 hover:underline active:underline'>Youtube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="min-w-screen bg-primary">
+            <!-- card -->
+            <div class="max-w-[1400px] p-5 py-10 border-t border-gray-500 mx-auto">
+                <p class="text-white text-center">© Bakunya's Team</p>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+    </footer>
+
+
+    <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/lazyimage.js"></script>
+</body>
+</html>

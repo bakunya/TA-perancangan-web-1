@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="/assets/css/index.css">
     <title>PMB | Amikom</title>
 </head>
-
 <body>
+
     <nav>
         <!-- NAVBAR -->
         <!-- wrapper -->
-        <div class="transition-all duration-500 min-w-screen bg-primary/80 left-0 right-0 top-0 z-[9]" id="nav-links"> 
+        <div class="min-w-screen fixed w-screen bg-primary/80 left-0 right-0 top-0 z-[9]" id="nav-links"> 
             <!-- card -->
             <div class="max-w-[1400px] p-5 mx-auto">
                 <div class="flex justify-between items-center">
@@ -58,28 +58,191 @@
     <main>
         <!-- HOME-HERO -->
         <!-- wrapper -->
-        <div class="min-w-screen -mt-1 bg-primary min-h-screen relative pb-20">
-            <img data-src="/assets/images/img/profil.png" alt="profile" class="transition-all duration-500 inset-0 absolute object-cover object-center w-full h-full opacity-0">
-            <div class="inset-0 absolute w-full h-full bg-primary/80"></div>
-            <div class="max-w-[1400px] p-5 mx-auto min-h-full flex align-end justify-end flex-col pt-10">
-                <section class="z-[7] relative">
-                    <div class="grid-cols-1 md:grid-cols-2 grid items-end">
-                        <div id="nav-links-show-trigger">
-                            <h1 class="text-white text-4xl font-display font-semibold ">Profil Singkat Amikom</h1>
-                            <div class="bg-white h-[2px] mt-2 w-44"></div>
-                        </div>
-                        <div class="mt-12 md:mt-0 p-8 h-auto rounded-xl border border-white backdrop-blur shadow-lg shadow-white/20">
-                            <h1 class="text-white">Profil Singkat Universitas AMIKOM Yogyakarta</h1>
-                            <img data-src="/assets/images/img/profil.png" alt="profile" class="transition-all duration-500 h-auto object-cover object-center w-[90%] ml-auto mt-5 border border-white opacity-0">
+        <div class="min-w-screen -mt-1 pt-[78px] bg-primary max-h-[800px] h-screen">
+            <!-- card -->
+            <div class="max-w-[1400px] bg-primary p-5 mx-auto">
+                <div class="grid place-content-center">
+                    <div class='max-w-[900px] mx-auto mt-24 mb-44'>
+                        <h1 class='font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-white text-center'>“Penerimaan <br /> Mahasiswa Baru”</h1>
+                        <p class='text-center text-base sm:text-lg text-white mx-auto mt-10 max-w-[700px]'>Universitas AMIKOM Yogyakarta merupakan salah satu perguruan tinggi yang berkonsentrasi pada bidang industri teknologi kreatif yang menghasilkan lulusan dengan daya saing pasar internasional.</p>
+                        <div class="flex justify-center mt-10">
+                            <a href="/pmb/register.html" class="bg-white rounded-lg py-3 px-5 flex items-center shadow-lg shadow-white/30 transition-all border border-transparent duration-300 hover:bg-black/30 hover:border-white hover:text-white hover:shadow-black/50 hover:bg-black/30 active:border-white active:text-white active:shadow-black/50">
+                                Daftar Sekarang 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="ml-3 bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                    <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                    <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                    <p class="text-xl text-white mt-12 leading-loose tracking-wide font-semibold">
-                        Universitas Amikom Yogyakarta juga telah meraih 80 penghargaan internasional dan lebih dari 210 penghargaan nasional serta menghasilkan 24% lulusannya sebagai pengusaha (Business Placement Center AMIKOM, 2014). Perguruan Tinggi telah terakreditasi institusi B dan telah mendapatkan sertifikasi ISO 2009.
-                    </p>
-                </section>
+                </div>
             </div>
         </div>
         <!-- END HOME-HERO -->
+
+        <h1 class="text-5xl mt-52 font-bold text-zinc-800 text-center font-display">Pilihan Fakultas</h1>
+        <!-- FIK -->
+        <section class="my-24 p-10 mx-auto max-w-[1100px] bg-ver-primary-transparent overflow-hidden relative lg:rounded-xl lg:border border-white shadow-lg shadow-primary/40">
+            <h1 class="text-5xl font-bold text-white font-display">Fakultas Ilmu Komputer</h1>
+            <div class="mt-2 h-[2px] animate-short-long bg-white"></div>
+            <p class="mt-10 text-white leading-loose tracking-wider">Ilmu Komputer merupakan bidang studi yang identik dengan computer programming. Mahasiswa akan dibekali keterampilan menyusun algoritma dan programming untuk mengembangkan sebuah aplikasi maupun sistem perangkat lunak. Jadi, pada dasarnya kamu akan belajar bagaimana cara agar komputer mampu melakukan berbagai hal yang diinginkan penggunanya. Di jurusan ini, ide-ide kreatifmu bisa diwujudkan apalagi di dunia informasi digital yang semakin tak terbatas ini!</p>
+            <a href="/fakultas/fik.html" class="w-fit ml-auto mt-10 bg-white px-5 py-3 rounded block border transition-all duration-500 hover:border-white hover:bg-black/30 hover:text-white active:border-white active:bg-black/30 active:text-white">Selengkapnya</a>
+            <img data-src="/assets/images/img/coding.jpeg" class="absolute inset-0 w-full h-full -z-[9] object-cover object-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-gear-fill absolute top-0 right-0 m-5 animate-spin" viewBox="0 0 16 16">
+                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+            </svg>
+        </section>
+        <!-- END FIK -->
+
+        <!-- FES -->
+        <section class="my-24 p-10 mx-auto max-w-[1100px] bg-ver-primary-transparent overflow-hidden relative lg:rounded-xl lg:border border-white shadow-lg shadow-primary/40">
+            <h1 class="text-5xl font-bold text-white font-display">Fakultas Ekonomi & Sosial</h1>
+            <div class="mt-2 h-[2px] animate-short-long bg-white"></div>
+            <p class="mt-10 text-white leading-loose tracking-wider">Meski lekat dengan studi ilmu komputer dan teknologi, Universitas AMIKOM juga memiliki Fakultas Ekonomi dan Sosial. Ada enam jurusan di dalamnya, yaitu Akuntansi, Ilmu Komunikasi, Ekonomi, Kewirausahaan, Ilmu Pemerintahan, dan Hubungan Internasional. Tentu saja, jurusan-jurusan tersebut diintegrasikan dengan penguasaan Information and Communication Technology (ICT). </p>
+            <a href="/fakultas/fes.html" class="w-fit ml-auto mt-10 bg-white px-5 py-3 rounded block border transition-all duration-500 hover:border-white hover:bg-black/30 hover:text-white active:border-white active:bg-black/30 active:text-white">Selengkapnya</a>
+            <img data-src="/assets/images/img/economy.jpeg" class="absolute inset-0 w-full h-full -z-[9] object-cover object-center">
+            <div class="absolute inset-0 w-full h-full -z-[8] bg-black/60"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-gear-fill absolute top-0 right-0 m-5 animate-spin" viewBox="0 0 16 16">
+                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+            </svg>
+        </section>
+        <!-- END FES -->
+
+        <!-- FST -->
+        <section class="my-24 p-10 mx-auto max-w-[1100px] bg-ver-primary-transparent overflow-hidden relative lg:rounded-xl lg:border border-white shadow-lg shadow-primary/40">
+            <h1 class="text-5xl font-bold text-white font-display">Fakultas Sains & Teknologi</h1>
+            <div class="mt-2 h-[2px] animate-short-long bg-white"></div>
+            <p class="mt-10 text-white leading-loose tracking-wider">Sebagai bentuk kesadaran atas semakin meningkatnya kebutuhan tenaga ahli di bidang sains dan teknologi, Universitas AMIKOM Yogyakarta terpanggil untuk memenuhi kebutuhan tersebut dengan melakukan pendirian Fakultas Sains dan Teknologi. Memang fakultas ini merupakan fakultas termuda di antara lainnya, namun Quipperian tidak perlu khawatir. Universitas AMIKOM Yogyakarta telah merancang program pembelajaran untuk mencetak lulusan muda berkualitas dan siap bersaing di dunia kerja.</p>
+            <a href="/fakultas/fst.html" class="w-fit ml-auto mt-10 bg-white px-5 py-3 rounded block border transition-all duration-500 hover:border-white hover:bg-black/30 hover:text-white active:border-white active:bg-black/30 active:text-white">Selengkapnya</a>
+            <img data-src="/assets/images/img/tech.jpeg" class="absolute inset-0 w-full h-full -z-[9] object-cover object-center">
+            <div class="absolute inset-0 w-full h-full -z-[8] bg-black/60"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-gear-fill absolute top-0 right-0 m-5 animate-spin" viewBox="0 0 16 16">
+                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+            </svg>
+        </section>
+        <!-- END FST -->
+
+        <section class="min-w-screen max-w-[1400px] md:px-10 py-5 bg-secondary/70 mt-52">
+            <h1 class="text-white text-5xl mt-10 font-bold text-center font-display">Keuntungan Kuliah di Amikom</h1>
+            <p class="text-white mt-5 text-center text-lg">Banyak keuntungan yang akan kamu dapatkan ketika kuliah di AMIKOM.</p>
+            <section class="my-24 p-10 mx-auto max-w-[1100px] bg-ver-primary-transparent overflow-hidden relative lg:rounded-xl lg:border border-white shadow-lg shadow-primary/40">
+                <h1 class="text-4xl tracking-wider leading-relaxed font-bold text-white">Kuliah 100% Gratis Dengan Kartu Indonesia Pintar.</h1>
+                <div class="mt-10 ml-10 relative">
+                    <div class="h-full w-1 bg-white absolute left-0 top-0 bottom-0 rounded-xl"></div>
+                    <section class="flex mt-8 sm:mt-5 relative">
+                        <div class="top-0 -left-[6px] absolute w-[15px] h-[15px] w-fit rounded-full bg-white"></div>
+                        <p class="ml-10 -mt-1 w-fit text-sm col-span-1 w-full font-semibold tracking-wide leading-loose text-white">Bebas Biaya Komponen Uang Kuliah Tunggal (UKT).</p>
+                    </section>
+                    <section class="flex mt-8 sm:mt-5 relative">
+                        <div class="top-0 -left-[6px] absolute w-[15px] h-[15px] w-fit rounded-full bg-white"></div>
+                        <p class="ml-10 -mt-1 w-fit text-sm col-span-1 w-full font-semibold tracking-wide leading-loose text-white">Biaya Hidup, Biaya Sarana, Subsidi Biaya SPP Tetap dan Variabel.</p>
+                    </section>
+                    <section class="flex mt-8 sm:mt-5 relative">
+                        <div class="top-0 -left-[6px] absolute w-[15px] h-[15px] w-fit rounded-full bg-white"></div>
+                        <p class="ml-10 -mt-1 w-fit text-sm col-span-1 w-full font-semibold tracking-wide leading-loose text-white">Beasiswa diberikan Kepada Mahasiswa yang memenuhi dan dipersyaratkan oleh Pemerintah dan Universitas AMIKOM dengan dievaluasi setiap semester</p>
+                    </section>
+                </div>
+                <img data-src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29sbGVnZXx8fHx8fDE2NTc0NTg1MTE&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000" class="absolute inset-0 w-full h-full -z-[9] object-cover object-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-gear-fill absolute top-0 right-0 m-5 animate-spin" viewBox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                </svg>
+            </section>
+            <section class="my-24 p-10 mx-auto max-w-[1100px] bg-ver-primary-transparent overflow-hidden relative lg:rounded-xl lg:border border-white shadow-lg shadow-primary/40">
+                <h1 class="text-4xl tracking-wider leading-relaxed font-bold text-white">Beasiswa Prestasi Akademik Bagi Kamu Mahasiswa Berprestasi</h1>
+                <p class="mt-10 text-white leading-loose tracking-wider">Beasiswa untuk calon mahasiwa baru yang memiliki prestasi Akademik atau yang memiliki potensi Akademik, dengan ditunjukan bukti/sertifikat pernah menjuarai lomba bidang Akademik pada tingkat Kabupaten, Provinsi dan Nasional.</p>
+                <img data-src="https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29sbGVnZXx8fHx8fDE2NTc0NTg0ODQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000" class="absolute inset-0 w-full h-full -z-[9] object-cover object-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-gear-fill absolute top-0 right-0 m-5 animate-spin" viewBox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                </svg>
+            </section>
+            <section class="my-24 p-10 mx-auto max-w-[1100px] bg-ver-primary-transparent overflow-hidden relative lg:rounded-xl lg:border border-white shadow-lg shadow-primary/40">
+                <h1 class="text-4xl tracking-wider leading-relaxed font-bold text-white">Beasiswa Prestasi Olahraga Bagi Kamu Olahragawan Berprestasi</h1>
+                <p class="mt-10 text-white leading-loose tracking-wider">Beasiswa untuk calon mahasiwa baru yang memiliki prestasi Olahraga atau yang memiliki potensi Olahraga, dengan ditunjukan bukti/sertifikat pernah menjuarai lomba bidang Olahraga pada tingkat Kabupaten, Provinsi dan Nasional.</p>
+                <img data-src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29sbGVnZXx8fHx8fDE2NTc0NTg1NTA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000" class="absolute inset-0 w-full h-full -z-[9] object-cover object-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-gear-fill absolute top-0 right-0 m-5 animate-spin" viewBox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                </svg>
+            </section>
+            <section class="my-24 p-10 mx-auto max-w-[1100px] bg-ver-primary-transparent overflow-hidden relative lg:rounded-xl lg:border border-white shadow-lg shadow-primary/40">
+                <h1 class="text-4xl tracking-wider leading-relaxed font-bold text-white">Beasiswa Prestasi Seni Budaya Bagi Kamu Juara Bidang Seni Budaya</h1>
+                <p class="mt-10 text-white leading-loose tracking-wider">Beasiswa untuk calon mahasiwa baru yang memiliki prestasi Seni Budaya atau yang memiliki potensi Seni Budaya, dengan ditunjukan bukti/sertifikat pernah menjuarai lomba bidang Seni Budaya pada tingkat Kabupaten, Provinsi dan Nasional.</p>
+                <img data-src="https://images.unsplash.com/photo-1624727828618-ee42ef2ec5cf?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8c3R1ZGVudHN8fHx8fHwxNjU3NDU4NjEy&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000" class="absolute inset-0 w-full h-full -z-[9] object-cover object-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-gear-fill absolute top-0 right-0 m-5 animate-spin" viewBox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                </svg>
+            </section>
+            <section class="my-24 p-10 mx-auto max-w-[1100px] bg-ver-primary-transparent overflow-hidden relative lg:rounded-xl lg:border border-white shadow-lg shadow-primary/40">
+                <h1 class="text-4xl tracking-wider leading-relaxed font-bold text-white">Beasiswa Pemimpin Muda Untuk Calon Pemimpin Muda</h1>
+                <p class="mt-10 text-white leading-loose tracking-wider">Beasiswa untuk calon mahasiwa baru dengan potensi Kepemimpinan yang menonjol, dengan ditunjukan bukti/sertifikat pernah menjadi Ketua, Wakil Ketua, Sekretaris atau Bendahara pada Orgasinasi Siswa Intra Sekolah (OSIS) atau Orgasinasi Kepemudaan pada tingkat Kabupaten, Provinsi dan Nasional.</p>
+                <img data-src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8bGVhZGVyfHx8fHx8MTY1NzQ1ODcwMg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1000" class="absolute inset-0 w-full h-full -z-[9] object-cover object-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="white" class="bi bi-gear-fill absolute top-0 right-0 m-5 animate-spin" viewBox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                </svg>
+            </section>
+        </section>
+
+        <section class="min-w-screen max-w-[1400px] sm:px-10 mt-52 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+            <h1 class="text-5xl mb-10 xl:col-span-3 md:col-span-2 font-bold text-zinc-800 text-center font-display">Fasilitas</h1>
+            <div class="cursor-pointer w-full bg-primary/20 p-10 rounded-lg shadow-lg shadow-primary/20 transition-all duration-500 hover:shadow-none hover:bg-primary/50 hover:text-white relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="text-white/30 p-3 absolute top-0 right-0 bi bi-building" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                    <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+                </svg>
+                <h3 class="text-xl relative z-[7]"><strong>Lab. Praktikum</strong></h3>
+                <p class="mt-5 relative z-[7]">Terdapat 14 Laboratorium dan ditunjang dengan perlengkapan yang memiliki spesifikasi komputer terbaik.</p>
+            </div>
+            <div class="cursor-pointer w-full bg-primary/20 p-10 rounded-lg shadow-lg shadow-primary/20 transition-all duration-500 hover:shadow-none hover:bg-primary/50 hover:text-white relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="text-white/30 p-3 absolute top-0 right-0 bi bi-router" viewBox="0 0 16 16">
+                    <path d="M5.525 3.025a3.5 3.5 0 0 1 4.95 0 .5.5 0 1 0 .707-.707 4.5 4.5 0 0 0-6.364 0 .5.5 0 0 0 .707.707Z"/>
+                    <path d="M6.94 4.44a1.5 1.5 0 0 1 2.12 0 .5.5 0 0 0 .708-.708 2.5 2.5 0 0 0-3.536 0 .5.5 0 0 0 .707.707ZM2.5 11a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm4.5-.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2.5.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm1.5-.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Z"/>
+                    <path d="M2.974 2.342a.5.5 0 1 0-.948.316L3.806 8H1.5A1.5 1.5 0 0 0 0 9.5v2A1.5 1.5 0 0 0 1.5 13H2a.5.5 0 0 0 .5.5h2A.5.5 0 0 0 5 13h6a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5h.5a1.5 1.5 0 0 0 1.5-1.5v-2A1.5 1.5 0 0 0 14.5 8h-2.306l1.78-5.342a.5.5 0 1 0-.948-.316L11.14 8H4.86L2.974 2.342ZM14.5 9a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h13Z"/>
+                    <path d="M8.5 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                </svg>
+                <h3 class="text-xl relative z-[7]"><strong>Lab. Jaringan</strong></h3>
+                <p class="mt-5 relative z-[7]">Universitas AMIKOM Bekerjasama dengan perusahan Nasional dan Internasional dibidang Jaringan untuk menyediakan laboratorium bidang jaringan terbaik.</p>
+            </div>
+            <div class="cursor-pointer w-full bg-primary/20 p-10 rounded-lg shadow-lg shadow-primary/20 transition-all duration-500 hover:shadow-none hover:bg-primary/50 hover:text-white relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="text-white/30 p-3 absolute top-0 right-0 bi bi-camera-reels" viewBox="0 0 16 16">
+                    <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
+                    <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
+                    <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                </svg>
+                <h3 class="text-xl relative z-[7]"><strong>Cinema</strong></h3>
+                <p class="mt-5 relative z-[7]">Ruang pertemuan dan seminar <br> yang didesain mewah dan megah layaknya bioskop. Ruang Cinema juga dapat digunakan untuk memutar film.</p>
+            </div>
+            <div class="cursor-pointer w-full bg-primary/20 p-10 rounded-lg shadow-lg shadow-primary/20 transition-all duration-500 hover:shadow-none hover:bg-primary/50 hover:text-white relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="text-white/30 p-3 absolute top-0 right-0 bi bi-ethernet" viewBox="0 0 16 16">
+                    <path d="M14 13.5v-7a.5.5 0 0 0-.5-.5H12V4.5a.5.5 0 0 0-.5-.5h-1v-.5A.5.5 0 0 0 10 3H6a.5.5 0 0 0-.5.5V4h-1a.5.5 0 0 0-.5.5V6H2.5a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5ZM3.75 11h.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-1.5a.25.25 0 0 1 .25-.25Zm2 0h.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-1.5a.25.25 0 0 1 .25-.25Zm1.75.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-1.5ZM9.75 11h.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-1.5a.25.25 0 0 1 .25-.25Zm1.75.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-1.5Z"/>
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2ZM1 2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2Z"/>
+                </svg>
+                <h3 class="text-xl relative z-[7]"><strong>Inkubator Teknologi</strong></h3>
+                <p class="mt-5 relative z-[7]">Fasilitas inkubator teknologi yang digunakan untuk mengembangkan dan menginkubasi inovasi produk teknologi mahasiswa.</p>
+            </div>
+            <div class="cursor-pointer w-full bg-primary/20 p-10 rounded-lg shadow-lg shadow-primary/20 transition-all duration-500 hover:shadow-none hover:bg-primary/50 hover:text-white relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="text-white/30 p-3 absolute top-0 right-0 bi bi-door-open" viewBox="0 0 16 16">
+                    <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+                    <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z"/>
+                </svg>
+                <h3 class="text-xl relative z-[7]"><strong>Resource Center</strong></h3>
+                <p class="mt-5 relative z-[7]">Universitas AMIKOM Memiliki Perpustakan dengan konsep perpustakaan masa depan yang memiliki fasilitas dan buku lengkap.</p>
+            </div>
+        </section>
+
+        <section class="min-w-screen max-w-[1400px] md:px-10 py-5 mt-52 mb-44">
+            <div class="flex justify-end mb-10">
+                <button class="p-2 bg-primary shadow shadow-primary/50 text-white mx-2 rounded disabled:opacity-50 active:bg-primary/20 active:text-primary/70 hover:bg-primary/20 hover:text-primary/70 transition-all duration-300" id="dec">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                    </svg>
+                </button>
+                <button class="p-2 bg-primary shadow shadow-primary/50 text-white mx-2 rounded disabled:opacity-50 active:bg-primary/20 active:text-primary/70 hover:bg-primary/20 hover:text-primary/70 transition-all duration-300" id="inc">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="main" class="w-full max-w-screen overflow-x-auto max-h-screen"></div>
+        </section>
     </main>
 
     <footer>
@@ -148,7 +311,13 @@
         <!-- END FOOTER -->
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js" integrity="sha512-t2JWqzirxOmR9MZKu+BMz0TNHe55G5BZ/tfTmXMlxpUY8tsTo3QMD27QGoYKZKFAraIPDhFv56HLdN11ctmiTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/assets/js/navbar.js"></script>
     <script src="/assets/js/lazyimage.js"></script>
+    <script>
+        window.loadingTask = pdfjsLib.getDocument("/assets/pdf/pmb.pdf")
+        window.scalePDF = 1.4
+    </script>
+    <script src="/assets/js/pdf-reader.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const imageListenerLoadEvent = (e) => {
         e.target.classList.remove('opacity-0')
+        e.target.style.opacity = 100
         e.target.removeEventListener('load', imageListenerLoadEvent)
     }
 
