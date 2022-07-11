@@ -4,14 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/index.css">
-    <title>Organisasi | Amikom</title>
+    <title>PMB Login | Amikom</title>
 </head>
-
 <body>
+
     <nav>
         <!-- NAVBAR -->
         <!-- wrapper -->
-        <div class="transition-all duration-500 min-w-screen bg-primary/80 left-0 right-0 top-0 z-[9]" id="nav-links"> 
+        <div class="min-w-screen bg-primary left-0 right-0 top-0 z-[9]" id="nav-links"> 
             <!-- card -->
             <div class="max-w-[1400px] p-5 mx-auto">
                 <div class="flex justify-between items-center">
@@ -55,46 +55,34 @@
         <!-- END NAVBAR -->
     </nav>
 
-    <main>
-        <!-- HOME-HERO -->
-        <!-- wrapper -->
-        <div class="min-w-screen -mt-1 bg-primary min-h-screen relative pb-20">
-            <img data-src="/assets/images/img/profil.png" alt="profile" class="transition-all duration-500 inset-0 absolute object-cover object-center w-full h-full opacity-0">
-            <div class="inset-0 absolute w-full h-full bg-primary/80"></div>
-            <div class="max-w-[1400px] p-5 mx-auto min-h-full flex align-end justify-end flex-col pt-10">
-                <section class="z-[7] relative">
-                    <div class="grid-cols-1 md:grid-cols-2 grid items-end">
-                        <div id="nav-links-show-trigger">
-                            <h1 class="text-white text-4xl font-display font-semibold ">Organisasi Mahasiswa Amikom</h1>
-                            <div class="bg-white h-[2px] mt-2 w-44"></div>
-                        </div>
-                        <div class="mt-12 md:mt-0 p-8 h-auto rounded-xl border border-white backdrop-blur shadow-lg shadow-white/20">
-                            <h1 class="text-white">Organisasi Mahasiswa Universitas AMIKOM Yogyakarta</h1>
-                            <img data-src="/assets/images/img/profil.png" alt="profile" class="transition-all duration-500 h-auto object-cover object-center w-[90%] ml-auto mt-5 border border-white opacity-0">
-                        </div>
-                    </div>
+    <main class="min-w-screen max-w-[1400px] my-12 min-h-screen px-10 py-5 flex items-center justify-center mx-auto">
+        <section class="mx-auto max-w-[800px] w-full grid grid-cols-5">
+            <div class="col-span-5 md:col-span-2 bg-primary p-10 flex items-center justify-center">
+                <section class="text-white">
+                    <h1 class="text-2xl text-center font-semibold">PMB AMIKOM 2022/2023</h1>
+                    <p class="mt-10 text-center text-gray-300/80">Gunakan alamat Email dan Password yang sudah kamu daftarkan pada website PMB.</p>
+                    <span class="text-center block text-sm mt-10">Belum punya akun PMB?</span>
+                    <a href="/pmb/register.html" class="mt-2 text-sm underline block text-center">Daftar di Sini</a>
                 </section>
             </div>
-        </div>
-        <!-- END HOME-HERO -->
-
-        <!-- LINKS -->
-        <h1 class="font-bold mt-44 text-center font-display text-2xl px-10">Daftar Organisasi Mahasiswa Amikom Yogyakarta</h1>
-        <section class="px-5 mb-44 mt-5 mx-auto w-[300px] sm:w-[500px]">
-            <div class="flex flex-col">
-                <a href="/organisasi/amcc.html" class="w-full border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500">Amikom Computer Club</a>
-                <a href="/organisasi/afc.html" class="w-full border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500">Amikom Footbal Club</a>
-                <a href="/organisasi/bem.html" class="w-full border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500">Badan Eksekutif Mahasiswa</a>
-                <a href="/organisasi/koma.html" class="w-full border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500">Komunitas Multimedia Amikom</a>
-                <a href="/organisasi/mayapala.html" class="w-full border border-lg border-black rounded-lg px-5 py-3 mt-5 shadow-lg hover:shadow-none active:shadow-none border-primary/30 shadow-primary/30 transition-all duration-500">Mahasiswa Amikom Yogyakarta Pecinta Alam</a>
+            <div class="col-span-5 md:col-span-3 bg-white p-10 border-l border-t border-r border-b border-primary md:border-l-none flex items-center justify-center">
+                <section>
+                    <h1 class="text-2xl text-center font-semibold">Masuk Untuk Calon Mahasiswa</h1>
+                    <form action="" class="mt-7 mb-0">
+                        <label for="email" class="text-gray-600 ml-1 mt-5 block text-sm">Email</label>
+                        <input type="email" required id="email" class="w-full mt-1 p-2 border border-primary/20 text-sm outline-none rounded shadow transition-all duration-300 shadow-primary/20 focus:shadow-none" placeholder="your@mail.com">
+                        <label for="password" class="text-gray-600 ml-1 mt-5 block text-sm">Password</label>
+                        <input type="password" required id="password" class="w-full mt-1 p-2 border border-primary/20 text-sm outline-none rounded shadow transition-all duration-300 shadow-primary/20 focus:shadow-none" placeholder="******">
+                        <button type="submit" class="mt-7 block w-full text-white bg-primary py-2 rounded">Daftar Sekarang</button>
+                    </form>
+                </section>
             </div>
         </section>
-        <!-- END LINKS -->
     </main>
 
     <footer>
         <!-- FOOTER -->
-        <div class="min-w-screen mt-44 bg-primary">
+        <div class="min-w-screen bg-primary">
             <!-- card -->
             <div class="mx-auto max-w-[1400px] p-5 px-10 grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-0 justify-between items-start">
                 <div class="col-span-1 text-white">
@@ -160,6 +148,5 @@
 
 
     <script src="/assets/js/navbar.js"></script>
-    <script src="/assets/js/lazyimage.js"></script>
 </body>
 </html>
