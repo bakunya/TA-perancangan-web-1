@@ -153,6 +153,12 @@
 
         <!-- PDF-READER -->
         <div class="flex justify-end max-w-[1400px] p-5 px-10">
+            <a href="/assets/pdf/d3mi-roadmap.pdf" target="__blank" class="p-2 bg-primary shadow shadow-primary/50 text-white mx-2 rounded disabled:opacity-50 active:bg-primary/20 active:text-primary/70 hover:bg-primary/20 hover:text-primary/70 transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                </svg>
+            </a>
             <button class="p-2 bg-primary shadow shadow-primary/50 text-white mx-2 rounded disabled:opacity-50 active:bg-primary/20 active:text-primary/70 hover:bg-primary/20 hover:text-primary/70 transition-all duration-300" id="dec">
                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
                     <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
@@ -235,7 +241,8 @@
     </footer>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js" integrity="sha512-t2JWqzirxOmR9MZKu+BMz0TNHe55G5BZ/tfTmXMlxpUY8tsTo3QMD27QGoYKZKFAraIPDhFv56HLdN11ctmiTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.14.305/build/pdf.min.js" integrity="sha256-HyYlSbhjYnxbc8y6bMUhGGQ1q+mEOHM2FDWZzwKc/qg=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.14.305/build/pdf.worker.min.js" integrity="sha256-SsTI6giud7LodWI033EzPRt4u4cy1zvOY2S9/e2cJ2c=" crossorigin="anonymous"></script>
     <script src="/assets/js/navbar.js"></script>
     <script src="/assets/js/lazyimage.js"></script>
     <script>

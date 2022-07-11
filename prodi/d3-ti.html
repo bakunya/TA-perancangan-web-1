@@ -84,7 +84,7 @@
         <!-- KONSENTRASI -->
         <h1 class="font-bold mt-44 mb-20 text-center font-display text-4xl capitalize">Konsentrasi Prodi</h1>
         <section class="mb-24 p-10 mx-auto max-w-[1100px] bg-ver-primary-transparent overflow-hidden relative lg:rounded-xl lg:border border-white shadow-lg shadow-primary/40">
-            <h1 class="text-5xl font-bold text-white font-display">Web Development</h1>
+            <h1 class="text-4xl tracking-wider leading-relaxed font-bold text-white">Web Development</h1>
             <div class="mt-2 h-[2px] w-[20%] bg-white"></div>
             <p class="mt-10 text-white leading-loose tracking-wider font-semibold">Mampu membuat aplikasi sistem informasi berbasis web, mampu mengembangkan dan mengelola aplikasi e-business dan e-commerce, mampu mendapakan provit dari aplikasi web yang dikembangkan, serta publikasi informasi yang benar di internet.</p>
             <img data-src="/assets/images/img/coding-2.jpeg" class="absolute inset-0 w-full h-full -z-[9] object-cover object-center">
@@ -94,7 +94,7 @@
             <div class="absolute inset-0 w-full h-full -z-[8] bg-black/60"></div>
         </section>
         <section class="my-24 p-10 mx-auto max-w-[1100px] bg-ver-primary-transparent overflow-hidden relative lg:rounded-xl lg:border border-white shadow-lg shadow-primary/40">
-            <h1 class="text-5xl font-bold text-white font-display">2D Animation</h1>
+            <h1 class="text-4xl tracking-wider leading-relaxed font-bold text-white">2D Animation</h1>
             <div class="mt-2 h-[2px] w-[20%] bg-white"></div>
             <p class="mt-10 text-white leading-loose tracking-wider font-semibold">Mampu menciptakan karakter tokoh animasi, menghadirkan gerakan animasi berkualitas, produksi film animasi, mulai dari pra produksi (seperti: desain karakter, background, set properti, membuat screenplay, naskah cerita, storyboard, dll); produksi (membuat karakter dan background 2D, animasi karakter 2D, film Animasi 2D), dan pra produksi (editing,  visual effect, compositing, dll). Mampu melakukan manajemen produksi dan memahami konsep distribusi film animasi).</p>
             <img data-src="/assets/images/img/animation.jpeg" class="absolute inset-0 w-full h-full -z-[9] object-cover object-center">
@@ -104,7 +104,7 @@
             <div class="absolute inset-0 w-full h-full -z-[8] bg-black/60"></div>
         </section>
         <section class="my-24 p-10 mx-auto max-w-[1100px] bg-ver-primary-transparent overflow-hidden relative lg:rounded-xl lg:border border-white shadow-lg shadow-primary/40">
-            <h1 class="text-5xl font-bold text-white font-display">Networking</h1>
+            <h1 class="text-4xl tracking-wider leading-relaxed font-bold text-white">Networking</h1>
             <div class="mt-2 h-[2px] w-[20%] bg-white"></div>
             <p class="mt-10 text-white leading-loose tracking-wider font-semibold">Mampu membuat persiapan, perencanaan, perancangan, implementasi, pengoperasian dan optimalisasi jaringan komputer. Memiliki keahlian untuk menjaga, memelihara serta mengamankan jaringan dari ancaman. Memiliki keterampilan untuk membangun jaringan lokal, membuat koneksi internet, mengkonfigurasi perangkat jaringan, mampu melakukan instalasi, konfigurasi, administrasi dan pemeliharaan server dijaringan fisik maupun virtual (cloud computing).</p>
             <img data-src="/assets/images/img/network.jpeg" class="absolute inset-0 w-full h-full -z-[9] object-cover object-center">
@@ -181,6 +181,12 @@
 
         <!-- PDF-READER -->
         <div class="flex justify-end max-w-[1400px] p-5 px-10">
+            <a href="/assets/pdf/d3ti-roadmap.pdf" target="__blank" class="p-2 bg-primary shadow shadow-primary/50 text-white mx-2 rounded disabled:opacity-50 active:bg-primary/20 active:text-primary/70 hover:bg-primary/20 hover:text-primary/70 transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                </svg>
+            </a>
             <button class="p-2 bg-primary shadow shadow-primary/50 text-white mx-2 rounded disabled:opacity-50 active:bg-primary/20 active:text-primary/70 hover:bg-primary/20 hover:text-primary/70 transition-all duration-300" id="dec">
                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
                     <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
@@ -263,7 +269,8 @@
     </footer>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js" integrity="sha512-t2JWqzirxOmR9MZKu+BMz0TNHe55G5BZ/tfTmXMlxpUY8tsTo3QMD27QGoYKZKFAraIPDhFv56HLdN11ctmiTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.14.305/build/pdf.min.js" integrity="sha256-HyYlSbhjYnxbc8y6bMUhGGQ1q+mEOHM2FDWZzwKc/qg=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.14.305/build/pdf.worker.min.js" integrity="sha256-SsTI6giud7LodWI033EzPRt4u4cy1zvOY2S9/e2cJ2c=" crossorigin="anonymous"></script>
     <script src="/assets/js/navbar.js"></script>
     <script src="/assets/js/lazyimage.js"></script>
     <script>
