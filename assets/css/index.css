@@ -826,6 +826,10 @@ button,  a{
   margin-top: -3px;
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .mr-10{
   margin-right: 2.5rem;
 }
