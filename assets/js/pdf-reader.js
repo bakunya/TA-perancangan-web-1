@@ -2,7 +2,8 @@
 function render(scale = 0.4, disabledElements) {
     let allPages = 0;
     const container = document.getElementById("main")
-    disabledElements?.forEach(itm => (itm.disabled = true))
+    window.loadingTask = !window.loadingTask ? pdfjsLib.getDocument(window?.PDFPath) : window.loadingTask
+    disabledElements?.forEach(itm => (itm && (itm.disabled = true)))
 
     window?.loadingTask
         .promise
@@ -39,7 +40,7 @@ function render(scale = 0.4, disabledElements) {
                 container.appendChild(canvas)
             }
              
-            disabledElements?.forEach(itm => (itm.disabled = false))
+            disabledElements?.forEach(itm => (itm && (itm.disabled = false)))
         })
 }
 
@@ -49,8 +50,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const inc = document.getElementById('inc')
     const dec = document.getElementById('dec')
+    const loadPDF = document.getElementById('pdf-load')
+    
+    if(loadPDF) {
+        loadPDF.addEventListener('click', () => {
+            render(scale, [inc, dec, loadPDF])
 
-    render(scale, [inc, dec])
+            loadPDF.removeEventListener('click', () => {
+                render(scale, [inc, dec, loadPDF])
+            })
+        })
+    } else {
+        render(scale, [inc, dec, loadPDF])
+    }
 
     inc.addEventListener('click', () => {
         if(scale >= 1.5) return

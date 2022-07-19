@@ -226,6 +226,7 @@
         </section>
 
         <section class="min-w-screen max-w-[1400px] md:px-10 py-5 mt-52 mb-44">
+            <h1 class="font-bold text-center mb-14 font-display text-4xl capitalize">Panduan PMB</h1>
             <div class="flex justify-end mb-10">
                 <a href="/assets/pdf/pmb.pdf" target="__blank" class="p-2 bg-primary shadow shadow-primary/50 text-white mx-2 rounded disabled:opacity-50 active:bg-primary/20 active:text-primary/70 hover:bg-primary/20 hover:text-primary/70 transition-all duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
@@ -244,7 +245,9 @@
                     </svg>
                 </button>
             </div>
-            <div id="main" class="w-full max-w-screen overflow-x-auto max-h-screen"></div>
+            <div id="main" class="w-full max-w-screen overflow-x-auto max-h-screen">
+                <button id="pdf-load" class="block mx-auto p-2 px-4 max-w-[200px] bg-primary shadow shadow-primary/50 text-white rounded disabled:opacity-50  active:bg-primary/20 active:text-primary/70 hover:bg-primary/20 hover:text-primary/70 transition-all duration-300">Tampilkan PDF</button>
+            </div>
         </section>
     </main>
 
@@ -320,7 +323,7 @@
     <script src="/assets/js/navbar.js"></script>
     <script src="/assets/js/lazyimage.js"></script>
     <script>
-        window.loadingTask = pdfjsLib.getDocument("/assets/pdf/pmb.pdf")
+        window.PDFPath = "/assets/pdf/pmb.pdf"
         window.scalePDF = 1.4
     </script>
     <script src="/assets/js/pdf-reader.js"></script>

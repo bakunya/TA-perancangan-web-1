@@ -177,7 +177,9 @@
                 </svg>
             </button>
         </div>
-        <div id="main" class="w-[90%] mx-auto max-w-screen overflow-x-auto max-h-screen"></div>
+        <div id="main" class="w-[90%] mx-auto max-w-screen overflow-x-auto max-h-screen">
+            <button id="pdf-load" class="block mx-auto p-2 px-4 max-w-[200px] bg-primary shadow shadow-primary/50 text-white rounded disabled:opacity-50  active:bg-primary/20 active:text-primary/70 hover:bg-primary/20 hover:text-primary/70 transition-all duration-300">Tampilkan PDF</button>
+        </div>
         <!-- END PDF-READER -->
     </main>
 
@@ -253,7 +255,7 @@
     <script src="/assets/js/navbar.js"></script>
     <script src="/assets/js/lazyimage.js"></script>
     <script>
-        window.loadingTask = pdfjsLib.getDocument("/assets/pdf/geografi.pdf")
+        window.PDFPath = "/assets/pdf/geografi.pdf"
         window.scalePDF = 1
     </script>
     <script src="/assets/js/pdf-reader.js"></script>
