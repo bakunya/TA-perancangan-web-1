@@ -694,6 +694,11 @@ button,  a{
   margin-right: auto;
 }
 
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .my-44{
   margin-top: 11rem;
   margin-bottom: 11rem;
@@ -704,14 +709,14 @@ button,  a{
   margin-bottom: 6rem;
 }
 
-.mx-2{
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .my-12{
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .mr-8{
@@ -760,6 +765,10 @@ button,  a{
 
 .ml-4{
   margin-left: 1rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
 }
 
 .mt-44{
@@ -842,12 +851,12 @@ button,  a{
   margin-top: 3.5rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
-.mt-36{
-  margin-top: 9rem;
+.ml-5{
+  margin-left: 1.25rem;
 }
 
 .block{
@@ -930,22 +939,22 @@ button,  a{
   width: 100%;
 }
 
-.w-6{
-  width: 1.5rem;
-}
-
 .w-fit{
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.w-44{
-  width: 11rem;
+.w-6{
+  width: 1.5rem;
 }
 
 .w-\[90\%\]{
   width: 90%;
+}
+
+.w-44{
+  width: 11rem;
 }
 
 .w-\[300px\]{
@@ -1215,12 +1224,12 @@ button,  a{
   border-radius: 9999px;
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
 .rounded{
   border-radius: 0.25rem;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .border{
@@ -1326,6 +1335,10 @@ button,  a{
   background-color: rgb(74 27 157 / var(--tw-bg-opacity));
 }
 
+.bg-black\/80{
+  background-color: rgb(0 0 0 / 0.8);
+}
+
 .bg-ver-primary-transparent{
   background-image: linear-gradient(0deg, rgba(48,14,106,0.07046568627450978) 6%, rgba(48,14,106,0.34217436974789917) 26%, rgba(48,14,106,0.4206057422969187) 38%, rgba(48,14,106,0.46262254901960786) 48%, rgba(48,14,106,0.5270483193277311) 61%, rgba(48,14,106,1) 100%);
 }
@@ -1353,8 +1366,8 @@ button,  a{
   padding: 2rem;
 }
 
-.p-9{
-  padding: 2.25rem;
+.p-2{
+  padding: 0.5rem;
 }
 
 .p-10{
@@ -1363,10 +1376,6 @@ button,  a{
 
 .p-3{
   padding: 0.75rem;
-}
-
-.p-2{
-  padding: 0.5rem;
 }
 
 .px-10{
@@ -1404,6 +1413,11 @@ button,  a{
   padding-bottom: 0.5rem;
 }
 
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pt-\[78px\]{
   padding-top: 78px;
 }
@@ -1416,6 +1430,14 @@ button,  a{
   padding-left: 1.25rem;
 }
 
+.pl-8{
+  padding-left: 2rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
 .pb-20{
   padding-bottom: 5rem;
 }
@@ -1426,14 +1448,6 @@ button,  a{
 
 .pl-10{
   padding-left: 2.5rem;
-}
-
-.pl-8{
-  padding-left: 2rem;
-}
-
-.pb-8{
-  padding-bottom: 2rem;
 }
 
 .text-center{
@@ -1561,6 +1575,16 @@ button,  a{
   color: rgb(63 63 70 / var(--tw-text-opacity));
 }
 
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1576,20 +1600,25 @@ button,  a{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-lg{
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-lg{
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-primary\/20{
   --tw-shadow-color: rgb(48 14 106 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-primary\/50{
+  --tw-shadow-color: rgb(48 14 106 / 0.5);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1610,11 +1639,6 @@ button,  a{
 
 .shadow-white\/30{
   --tw-shadow-color: rgb(255 255 255 / 0.3);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-primary\/50{
-  --tw-shadow-color: rgb(48 14 106 / 0.5);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1675,6 +1699,10 @@ button,  a{
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.hover\:bg-primary\/20:hover{
+  background-color: rgb(48 14 106 / 0.2);
+}
+
 .hover\:bg-black\/30:hover{
   background-color: rgb(0 0 0 / 0.3);
 }
@@ -1683,17 +1711,13 @@ button,  a{
   background-color: rgb(48 14 106 / 0.5);
 }
 
-.hover\:bg-primary\/20:hover{
-  background-color: rgb(48 14 106 / 0.2);
+.hover\:text-primary\/70:hover{
+  color: rgb(48 14 106 / 0.7);
 }
 
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-primary\/70:hover{
-  color: rgb(48 14 106 / 0.7);
 }
 
 .hover\:underline:hover{
@@ -1723,21 +1747,21 @@ button,  a{
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.active\:bg-primary\/20:active{
+  background-color: rgb(48 14 106 / 0.2);
+}
+
 .active\:bg-black\/30:active{
   background-color: rgb(0 0 0 / 0.3);
 }
 
-.active\:bg-primary\/20:active{
-  background-color: rgb(48 14 106 / 0.2);
+.active\:text-primary\/70:active{
+  color: rgb(48 14 106 / 0.7);
 }
 
 .active\:text-white:active{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.active\:text-primary\/70:active{
-  color: rgb(48 14 106 / 0.7);
 }
 
 .active\:underline:active{
@@ -1771,6 +1795,10 @@ button,  a{
 
   .sm\:mt-10{
     margin-top: 2.5rem;
+  }
+
+  .sm\:ml-10{
+    margin-left: 2.5rem;
   }
 
   .sm\:w-\[500px\]{
@@ -1849,6 +1877,10 @@ button,  a{
     max-width: 800px;
   }
 
+  .md\:max-w-\[600px\]{
+    max-width: 600px;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1869,6 +1901,11 @@ button,  a{
   .md\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .md\:pr-20{
